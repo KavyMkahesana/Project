@@ -114,3 +114,186 @@
     </footer>
 </body>
 </html>
+css code
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
+#home {
+    background: url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+}
+
+#home h2 {
+    font-size: 3rem;
+}
+
+#home p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Menu Section */
+#menu {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+#menu .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#menu h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.menu-item p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Reservation Section */
+#reservation {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#reservation .container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#reservation form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reservation label {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+#reservation input, #reservation button {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+#reservation button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#reservation button:hover {
+    background-color: #555;
+}
+
+/* Location Section */
+#location {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.map iframe {
+    border: 0;
+    width: 100%;
+    height: 450px;
+}
+
+/* Customer Reviews Section */
+#reviews {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#reviews .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#reviews .review {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
