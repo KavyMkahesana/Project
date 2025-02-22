@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - My Local Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="download.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="index.html#reservation">RESERVATION</a></li>
+                    <li><a href="index.html#location">LOCATION</a></li>
+                    <li><a href="index.html#testimonials">TESTIMONIALS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Menu</h1>
+    </section>
+
+    <!------ Menu Items ------>
+    <section class="menu-items">
+        <div class="row">
+            <div class="menu-col">
+                <img src="download (1).jpg" alt="Dish 1">
+                <h3>[Gujarati thali]</h3>
+                <p>[Best thing foe our health].</p>
+                <h4>$[200]</h4>
+            </div>
+            <div class="menu-col">
+                <img src="download (2).jpg" alt="Dish 2">
+                <h3>[Punjabi thali]</h3>
+                <p>[Punjabi dish].</p>
+                <h4>$[120]</h4>
+            </div>
+            <div class="menu-col">
+                <img src="download (5).jpg" alt="Dish 3">
+                <h3>[Samosas anf many thingd]</h3>
+                <p>[Best food for brunch].</p>
+                <h4>$[100]</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-col">
+                <img src="download (6).jpg" alt="Dish 4">
+                <h3>[choumin]</h3>
+                <p>[One of the best chines food].</p>
+                <h4>$[70]</h4>
+            </div>
+            <div class="menu-col">
+                <img src="download (7).jpg" alt="Dish 5">
+                <h3>[italian salad]</h3>
+                <p>[best for our health].</p>
+                <h4>$[50]</h4>
+            </div>
+            <div class="menu-col">
+                <img src="download (8).jpg" alt="Dish 6">
+                <h3>[Idli Dosa]</h3>
+                <p>[Best south indian dishe].</p>
+                <h4>$[20]</h4>
+            </div>
+        </div>
+    </section>
+
+    <!------ Footer ------>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p> [All in One] is a family-owned restaurant dedicated to serving fresh, local ingredients in a warm and inviting setting. We are passionate about providing exceptional dining experiences.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Your Name/Company</p>
+    </section>
+
+<!------JavaScript for Toggle Menu------>
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
